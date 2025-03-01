@@ -1,0 +1,111 @@
+body {
+        background-color: #ffffff; /* Fundo branco */
+        opacity: 1;
+        background-image: radial-gradient(#e0e0e0 0.2px, #ffffff 0.2px); /* Gradiente cinza claro e branco */
+        background-size: 4px 4px;
+        color: #000000; /* Texto preto para contraste */
+      }
+      
+      /* Título central */
+      #titcentral {
+        font-size: 25px;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: #cccccc; /* Cinza claro */
+        background-color: #e0e0e0; /* Fundo cinza claro */
+        color: #000000; /* Texto preto */
+        display: block;
+        text-align: center;
+        padding: 8px 8px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      /* Subtítulo */
+      .subtitle {
+        font-family: "Arial", sans-serif; /* Fonte mais fina */
+        color: #606060; /* Cinza médio */
+        position: absolute;
+        text-align: left;
+        left: 2%;
+        top: calc(100px + 25px);
+        font-size: 18px;
+      }
+      
+      /* Estilização dos botões de drop-down */
+      .dropbtn {
+        border-style: solid;
+        border-color: #cccccc; /* Cinza claro */
+        background-color: #e0e0e0; /* Fundo cinza claro */
+        color: #000000; /* Texto preto */
+        text-align: center;
+        padding: 8px 8px;
+        margin-bottom: 4px;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+      }
+      
+      /* Ocultar sublistas inicialmente e adicionar transição */
+      .sublist {
+        display: none;
+        list-style: none; /* Remove marcador padrão */
+        padding-left: 0; /* Remove padding padrão */
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease; /* Transição suave */
+      }
+      
+      /* Itens das sublistas */
+      .sublist li {
+        border-style: solid;
+        border-color: #cccccc; /* Cinza claro */
+        background-color: #e0e0e0; /* Fundo cinza claro */
+        color: #000000; /* Texto preto */
+        text-align: center;
+        padding: 8px 8px;
+        margin-bottom: 4px;
+        list-style: none;
+        border-radius: 50px;
+      }
+      
+      /* Estilização do botão */
+      #myButton {
+        background-color: #4f504f; /* Cor do botão */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        transition: transform 0.5s ease-in-out; /* Animação de transformação */
+      }
+      
+/* Estilização da descrição */
+.descricao {
+        display: none; /* Inicialmente oculta */
+        border-style: solid;
+        border-color: #cccccc; /* Cinza claro */
+        background-color: #d4d4d4; /* Cinza médio */
+        color: #000000; /* Texto preto */
+        text-align: center;
+        padding: 8px 8px;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 50px; /* Ajuste de posição para ficar acima do botão */
+        right: 10px;
+        opacity: 0; /* Opacidade inicial */
+        max-height: 0; /* Altura inicial zero */
+        overflow: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease; /* Transição suave */
+      }
+      
+      
